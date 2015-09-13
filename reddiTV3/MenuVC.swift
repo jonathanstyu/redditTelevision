@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MenuViewController: UIViewController {
+    var menuCollection: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        createUI()
     }
 
     override func didReceiveMemoryWarning() {
