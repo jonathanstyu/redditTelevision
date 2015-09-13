@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31B7A61D1BA6105200BAAC33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7A61C1BA6105200BAAC33 /* AppDelegate.swift */; };
+		31B7A61F1BA6105200BAAC33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7A61E1BA6105200BAAC33 /* ViewController.swift */; };
+		31B7A6221BA6105200BAAC33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B7A6201BA6105200BAAC33 /* Main.storyboard */; };
+		31B7A6241BA6105200BAAC33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B7A6231BA6105200BAAC33 /* Assets.xcassets */; };
+		31B7A62F1BA6105200BAAC33 /* reddiTV3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7A62E1BA6105200BAAC33 /* reddiTV3Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31B7A62B1BA6105200BAAC33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31B7A6111BA6105100BAAC33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31B7A6181BA6105200BAAC33;
+			remoteInfo = reddiTV3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31B7A6191BA6105200BAAC33 /* reddiTV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reddiTV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B7A61C1BA6105200BAAC33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31B7A61E1BA6105200BAAC33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31B7A6211BA6105200BAAC33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31B7A6231BA6105200BAAC33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31B7A6251BA6105200BAAC33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31B7A62A1BA6105200BAAC33 /* reddiTV3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reddiTV3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B7A62E1BA6105200BAAC33 /* reddiTV3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reddiTV3Tests.swift; sourceTree = "<group>"; };
+		31B7A6301BA6105200BAAC33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31B7A6161BA6105200BAAC33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31B7A6271BA6105200BAAC33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31B7A6101BA6105100BAAC33 = {
+			isa = PBXGroup;
+			children = (
+				31B7A61B1BA6105200BAAC33 /* reddiTV3 */,
+				31B7A62D1BA6105200BAAC33 /* reddiTV3Tests */,
+				31B7A61A1BA6105200BAAC33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31B7A61A1BA6105200BAAC33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31B7A6191BA6105200BAAC33 /* reddiTV3.app */,
+				31B7A62A1BA6105200BAAC33 /* reddiTV3Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31B7A61B1BA6105200BAAC33 /* reddiTV3 */ = {
+			isa = PBXGroup;
+			children = (
+				31B7A61C1BA6105200BAAC33 /* AppDelegate.swift */,
+				31B7A61E1BA6105200BAAC33 /* ViewController.swift */,
+				31B7A6201BA6105200BAAC33 /* Main.storyboard */,
+				31B7A6231BA6105200BAAC33 /* Assets.xcassets */,
+				31B7A6251BA6105200BAAC33 /* Info.plist */,
+			);
+			path = reddiTV3;
+			sourceTree = "<group>";
+		};
+		31B7A62D1BA6105200BAAC33 /* reddiTV3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				31B7A62E1BA6105200BAAC33 /* reddiTV3Tests.swift */,
+				31B7A6301BA6105200BAAC33 /* Info.plist */,
+			);
+			path = reddiTV3Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31B7A6181BA6105200BAAC33 /* reddiTV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31B7A6331BA6105200BAAC33 /* Build configuration list for PBXNativeTarget "reddiTV3" */;
+			buildPhases = (
+				31B7A6151BA6105200BAAC33 /* Sources */,
+				31B7A6161BA6105200BAAC33 /* Frameworks */,
+				31B7A6171BA6105200BAAC33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = reddiTV3;
+			productName = reddiTV3;
+			productReference = 31B7A6191BA6105200BAAC33 /* reddiTV3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31B7A6291BA6105200BAAC33 /* reddiTV3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31B7A6361BA6105200BAAC33 /* Build configuration list for PBXNativeTarget "reddiTV3Tests" */;
+			buildPhases = (
+				31B7A6261BA6105200BAAC33 /* Sources */,
+				31B7A6271BA6105200BAAC33 /* Frameworks */,
+				31B7A6281BA6105200BAAC33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31B7A62C1BA6105200BAAC33 /* PBXTargetDependency */,
+			);
+			name = reddiTV3Tests;
+			productName = reddiTV3Tests;
+			productReference = 31B7A62A1BA6105200BAAC33 /* reddiTV3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31B7A6111BA6105100BAAC33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Jonathan Yu";
+				TargetAttributes = {
+					31B7A6181BA6105200BAAC33 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					31B7A6291BA6105200BAAC33 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 31B7A6181BA6105200BAAC33;
+					};
+				};
+			};
+			buildConfigurationList = 31B7A6141BA6105100BAAC33 /* Build configuration list for PBXProject "reddiTV3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31B7A6101BA6105100BAAC33;
+			productRefGroup = 31B7A61A1BA6105200BAAC33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31B7A6181BA6105200BAAC33 /* reddiTV3 */,
+				31B7A6291BA6105200BAAC33 /* reddiTV3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31B7A6171BA6105200BAAC33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B7A6241BA6105200BAAC33 /* Assets.xcassets in Resources */,
+				31B7A6221BA6105200BAAC33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31B7A6281BA6105200BAAC33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31B7A6151BA6105200BAAC33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B7A61F1BA6105200BAAC33 /* ViewController.swift in Sources */,
+				31B7A61D1BA6105200BAAC33 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31B7A6261BA6105200BAAC33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B7A62F1BA6105200BAAC33 /* reddiTV3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31B7A62C1BA6105200BAAC33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31B7A6181BA6105200BAAC33 /* reddiTV3 */;
+			targetProxy = 31B7A62B1BA6105200BAAC33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31B7A6201BA6105200BAAC33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31B7A6211BA6105200BAAC33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31B7A6311BA6105200BAAC33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		31B7A6321BA6105200BAAC33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31B7A6341BA6105200BAAC33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = reddiTV3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.jonathanyu.reddiTV3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		31B7A6351BA6105200BAAC33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = reddiTV3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.jonathanyu.reddiTV3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		31B7A6371BA6105200BAAC33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = reddiTV3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.jonathanyu.reddiTV3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reddiTV3.app/reddiTV3";
+			};
+			name = Debug;
+		};
+		31B7A6381BA6105200BAAC33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = reddiTV3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.jonathanyu.reddiTV3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reddiTV3.app/reddiTV3";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31B7A6141BA6105100BAAC33 /* Build configuration list for PBXProject "reddiTV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31B7A6311BA6105200BAAC33 /* Debug */,
+				31B7A6321BA6105200BAAC33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31B7A6331BA6105200BAAC33 /* Build configuration list for PBXNativeTarget "reddiTV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31B7A6341BA6105200BAAC33 /* Debug */,
+				31B7A6351BA6105200BAAC33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		31B7A6361BA6105200BAAC33 /* Build configuration list for PBXNativeTarget "reddiTV3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31B7A6371BA6105200BAAC33 /* Debug */,
+				31B7A6381BA6105200BAAC33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31B7A6111BA6105100BAAC33 /* Project object */;
+}
