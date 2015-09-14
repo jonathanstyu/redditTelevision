@@ -15,6 +15,7 @@
 		31B7A63E1BA61C2300BAAC33 /* MenuVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7A63D1BA61C2300BAAC33 /* MenuVC-UI.swift */; };
 		31B7A6401BA61C3C00BAAC33 /* MenuVC-Coll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7A63F1BA61C3C00BAAC33 /* MenuVC-Coll.swift */; };
 		31B7A6421BA61D3700BAAC33 /* VidViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7A6411BA61D3700BAAC33 /* VidViewCell.swift */; };
+		31B7A6471BA663C700BAAC33 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7A6461BA663C700BAAC33 /* UIFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		31B7A63D1BA61C2300BAAC33 /* MenuVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuVC-UI.swift"; sourceTree = "<group>"; };
 		31B7A63F1BA61C3C00BAAC33 /* MenuVC-Coll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuVC-Coll.swift"; sourceTree = "<group>"; };
 		31B7A6411BA61D3700BAAC33 /* VidViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VidViewCell.swift; sourceTree = "<group>"; };
+		31B7A6461BA663C700BAAC33 /* UIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				31B7A63B1BA6117E00BAAC33 /* URLFactory.swift */,
+				31B7A6461BA663C700BAAC33 /* UIFactory.swift */,
 				31B7A61C1BA6105200BAAC33 /* AppDelegate.swift */,
 				31B7A61E1BA6105200BAAC33 /* MenuVC.swift */,
 				31B7A63D1BA61C2300BAAC33 /* MenuVC-UI.swift */,
@@ -204,6 +207,7 @@
 				31B7A61F1BA6105200BAAC33 /* MenuVC.swift in Sources */,
 				31B7A6401BA61C3C00BAAC33 /* MenuVC-Coll.swift in Sources */,
 				31B7A61D1BA6105200BAAC33 /* AppDelegate.swift in Sources */,
+				31B7A6471BA663C700BAAC33 /* UIFactory.swift in Sources */,
 				31B7A63C1BA6117E00BAAC33 /* URLFactory.swift in Sources */,
 				31B7A63E1BA61C2300BAAC33 /* MenuVC-UI.swift in Sources */,
 			);

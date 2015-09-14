@@ -11,7 +11,7 @@ import Foundation
 class URLFactory {
     
     class func urlPull(completion: (receivedData: NSData?, error: NSError?) -> Void) -> Void {
-        let url = NSURL(string: URLFactory.createURL(5))
+        let url = NSURL(string: URLFactory.createURL("week", subreddit: "videos"))
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession.sharedSession()
         _ = session.dataTaskWithRequest(request) { (receivedData, urlResponse, receivedError) -> Void in
@@ -19,10 +19,8 @@ class URLFactory {
         }
     }
     
-    class func createURL(days: Int) -> String {
-        let dateTime = NSDate().timeIntervalSince1970
-        
-        return "https://www.reddit.com/search.json?q=%28and+%28or+site%3A%27youtube.com%27+site%3A%27vimeo.com%27+site%3A%27youtu.be%27%29+timestamp%3A\(Int(dateTime - 5.days))..%29&restrict_sr=on&sort=top&syntax=cloudsearch"
+    class func createURL(time: String, subreddit: String) -> String {
+        return "https://www.reddit.com/search.json?q=%28site%3Ayoutube.com+OR+site%3Avimeo.com+OR+site%3Ayoutu.be%29+nsfw%3A0+subreddit%3A\(subreddit)&restrict_sr=&sort=top&t=\(time)"
     }
 }
 

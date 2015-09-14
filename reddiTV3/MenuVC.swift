@@ -10,6 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
     var menuCollection: UICollectionView!
+    var channels = ["videos", "music", "television", "gaming", "sports", "documentaries", "redditpicks", "funny", "classicalmusic", "jazz", "sciencevideos", "learnuselesstalents", "deepintoyoutube", "todayilearned"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

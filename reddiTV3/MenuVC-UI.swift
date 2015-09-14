@@ -12,6 +12,12 @@ import UIKit
 extension MenuViewController {
     
     func createUI() {
+        self.view.backgroundColor = UIFactory.generateRandomColor()
+        
+        UIView.animateWithDuration(4.0, delay: 5.0, options: [UIViewAnimationOptions.Repeat, UIViewAnimationOptions.Autoreverse], animations: { () -> Void in
+            self.view.backgroundColor = UIFactory.generateRandomColor()
+            }, completion: nil)
+        
         setupCollectionView()
     }
     

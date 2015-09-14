@@ -10,15 +10,26 @@ import Foundation
 import UIKit
 
 class VidViewCell: UICollectionViewCell {
-    var vidThumbnail: UIImageView!
+    var thumbnail: UIImageView!
+    var title: UILabel!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        vidThumbnail = UIImageView()
-        vidThumbnail.image = UIImage(contentsOfFile: "DefaultVidThumbnail")
-        vidThumbnail.frame = CGRectMake(20, 20, 100, 100)
-        self.contentView.addSubview(vidThumbnail)
+        let border: CGFloat = 10
+        
+        thumbnail = UIImageView()
+        thumbnail.image = UIImage(contentsOfFile: "DefaultVidThumbnail")
+        thumbnail.frame = CGRectMake(border, border, (self.contentView.frame.width - 2 * border), (self.contentView.frame.height - 2 * border)*0.67)
+        
+        title = UILabel()
+        title.adjustsFontSizeToFitWidth = true
+        title.font = UIFont(name: "Avenir-Black", size: 60.0)
+        title.minimumScaleFactor = 0.2
+        title.frame = CGRectMake(0, thumbnail.frame.height, self.contentView.frame.width, self.contentView.frame.height - thumbnail.frame.height)
+        
+        self.contentView.addSubview(thumbnail)
+        self.contentView.addSubview(title)
     }
     
     required init?(coder aDecoder: NSCoder) {
