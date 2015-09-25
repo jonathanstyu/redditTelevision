@@ -17,14 +17,16 @@ class VidViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         let border: CGFloat = 10
-        
+        let thumbnailFrame: CGRect = CGRectMake(border, border, (self.contentView.frame.width - 2 * border), (self.contentView.frame.height - 2 * border)*0.67)
         thumbnail = UIImageView()
-        thumbnail.image = UIImage(contentsOfFile: "DefaultVidThumbnail")
-        thumbnail.frame = CGRectMake(border, border, (self.contentView.frame.width - 2 * border), (self.contentView.frame.height - 2 * border)*0.67)
+        thumbnail.adjustsImageWhenAncestorFocused = true
+        thumbnail.backgroundColor = UIColor.whiteColor()
+        thumbnail.image = UIImage(named: "DefaultVidThumbnail")
+        thumbnail.frame = thumbnailFrame
         
         title = UILabel()
         title.adjustsFontSizeToFitWidth = true
-        title.font = UIFont(name: "Avenir-Black", size: 60.0)
+        title.font = UIFont(name: "Avenir-Black", size: 30.0)
         title.minimumScaleFactor = 0.2
         title.frame = CGRectMake(0, thumbnail.frame.height, self.contentView.frame.width, self.contentView.frame.height - thumbnail.frame.height)
         

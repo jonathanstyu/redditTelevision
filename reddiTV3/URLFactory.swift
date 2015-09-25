@@ -10,8 +10,8 @@ import Foundation
 
 class URLFactory {
     
-    class func urlPull(completion: (receivedData: NSData?, error: NSError?) -> Void) -> Void {
-        let url = NSURL(string: URLFactory.createURL("week", subreddit: "videos"))
+    class func urlPull(requestedUrl: String, completion: (receivedData: NSData?, error: NSError?) -> Void) -> Void {
+        let url = NSURL(string: requestedUrl)
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession.sharedSession()
         _ = session.dataTaskWithRequest(request) { (receivedData, urlResponse, receivedError) -> Void in
