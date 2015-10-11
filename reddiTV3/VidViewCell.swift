@@ -27,7 +27,9 @@ class VidViewCell: UICollectionViewCell {
         
         title = UILabel()
         title.adjustsFontSizeToFitWidth = true
-//        title.font = UIFont(name: "Avenir-Black", size: 30.0)
+        title.font = UIFont(name: "Avenir-Black", size: 30.0)
+        title.numberOfLines = 0
+        title.lineBreakMode = NSLineBreakMode.ByWordWrapping
         title.minimumScaleFactor = 0.1
         title.frame = CGRectMake(0, thumbnail.frame.height, self.contentView.frame.width, self.contentView.frame.height - thumbnail.frame.height)
         

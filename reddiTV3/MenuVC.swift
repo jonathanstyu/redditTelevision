@@ -10,7 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
     var menuCollection: UICollectionView!
-    var videos: [[Video]] = []
+    var videos: [String:[Video]] = [String:[Video]]()
     var channels: [String] = ["videos", "music", "gaming", "funny"]
     
     override func viewDidLoad() {

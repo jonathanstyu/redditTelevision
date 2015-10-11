@@ -35,8 +35,8 @@ class URLFactory {
         return "https://www.reddit.com/search.json?q=%28site%3Ayoutube.com+OR+site%3Avimeo.com+OR+site%3Ayoutu.be%29+nsfw%3A0+subreddit%3A\(subreddit)&restrict_sr=&sort=top&t=day"
     }
     
-    class func populateVideos(channels: [String], completion: (downloadedVideos: [[Video]]) -> Void) -> Void {
-        var downloadedVideos = [[Video]]()
+    class func populateVideos(channels: [String], completion: (downloadedVideos: [String: [Video]]) -> Void) -> Void {
+        var downloadedVideos = [String:[Video]]()
         var GlobalMainQueue: dispatch_queue_t {
             return dispatch_get_main_queue()
         }
@@ -62,7 +62,7 @@ class URLFactory {
                     video.thumbnail_url = vidObject["thumbnail"] as! String
                     parsedVideoObjects.append(video)
                 }
-                downloadedVideos.append(parsedVideoObjects)
+                downloadedVideos[channel] = parsedVideoObjects
                 dispatch_group_leave(downloadQueue)
             })
         }

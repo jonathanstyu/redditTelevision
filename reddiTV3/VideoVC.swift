@@ -9,12 +9,13 @@
 import Foundation
 import UIKit
 
-class ChannelViewController: UIViewController {
+class VideoViewController: UIViewController {
     var channel: String!
+    var viewingVideo: Video!
     
-    init(channel: String) {
+    init(video: Video) {
         super.init(nibName: nil, bundle: nil)
-        self.channel = channel
+        self.viewingVideo = video
     }
  
     required init?(coder aDecoder: NSCoder) {
@@ -29,7 +30,7 @@ class ChannelViewController: UIViewController {
     func createUI() {
         let titleFrame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
         let titleLabel = UILabel(frame: titleFrame)
-        titleLabel.text = self.channel
+        titleLabel.text = self.viewingVideo.title
         self.view.addSubview(titleLabel)
     }
     

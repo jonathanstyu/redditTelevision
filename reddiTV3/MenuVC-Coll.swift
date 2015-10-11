@@ -36,7 +36,7 @@ extension MenuViewController: UICollectionViewDelegate, UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = menuCollection.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! VidViewCell
-        let video = self.videos[indexPath.section][indexPath.row] as Video!
+        let video = self.videos[self.channels[indexPath.section]]![indexPath.row] as Video!
         
         cell.backgroundColor = UIColor.blackColor()
         cell.title.textColor = UIColor.whiteColor()
@@ -87,7 +87,7 @@ extension MenuViewController: UICollectionViewDelegate, UICollectionViewDelegate
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.videos[section].count
+        return self.videos[self.channels[section]]!.count
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
@@ -96,7 +96,7 @@ extension MenuViewController: UICollectionViewDelegate, UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        let channelVC = ChannelViewController(channel: channels[indexPath.row])
+        let channelVC = VideoViewController(video: self.videos[self.channels[indexPath.section]]![indexPath.row])
         self.presentViewController(channelVC, animated: true, completion: nil)
         
     }
