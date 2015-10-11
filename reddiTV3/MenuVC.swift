@@ -10,12 +10,17 @@ import UIKit
 
 class MenuViewController: UIViewController {
     var menuCollection: UICollectionView!
-    var channels = ["videos", "music", "television", "gaming", "sports", "documentaries", "redditpicks", "funny", "classicalmusic", "jazz", "sciencevideos", "learnuselesstalents", "deepintoyoutube", "todayilearned"]
+    var videos: [[Video]] = []
+    var channels: [String] = ["videos", "music", "gaming", "funny"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         createUI()
+        
+        URLFactory.populateVideos(self.channels) { (downloadedVideos) -> Void in
+            self.videos = downloadedVideos
+            self.menuCollection.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {

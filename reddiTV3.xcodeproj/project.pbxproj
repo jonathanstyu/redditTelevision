@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		311A7A8D1BB2308C0026E409 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311A7A8C1BB2308C0026E409 /* ChannelVC.swift */; };
+		3189C5361BC1E51C008DC518 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189C5351BC1E51C008DC518 /* Video.swift */; };
 		31B7A61D1BA6105200BAAC33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7A61C1BA6105200BAAC33 /* AppDelegate.swift */; };
 		31B7A61F1BA6105200BAAC33 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7A61E1BA6105200BAAC33 /* MenuVC.swift */; };
 		31B7A6241BA6105200BAAC33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B7A6231BA6105200BAAC33 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		311A7A8C1BB2308C0026E409 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		3189C5351BC1E51C008DC518 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		31B7A6191BA6105200BAAC33 /* reddiTV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reddiTV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B7A61C1BA6105200BAAC33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31B7A61E1BA6105200BAAC33 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				31B7A63B1BA6117E00BAAC33 /* URLFactory.swift */,
 				31B7A6461BA663C700BAAC33 /* UIFactory.swift */,
+				3189C5351BC1E51C008DC518 /* Video.swift */,
 				31B7A61C1BA6105200BAAC33 /* AppDelegate.swift */,
 				311A7A8C1BB2308C0026E409 /* ChannelVC.swift */,
 				31B7A61E1BA6105200BAAC33 /* MenuVC.swift */,
@@ -210,6 +213,7 @@
 				31B7A61F1BA6105200BAAC33 /* MenuVC.swift in Sources */,
 				31B7A6401BA61C3C00BAAC33 /* MenuVC-Coll.swift in Sources */,
 				31B7A61D1BA6105200BAAC33 /* AppDelegate.swift in Sources */,
+				3189C5361BC1E51C008DC518 /* Video.swift in Sources */,
 				311A7A8D1BB2308C0026E409 /* ChannelVC.swift in Sources */,
 				31B7A6471BA663C700BAAC33 /* UIFactory.swift in Sources */,
 				31B7A63C1BA6117E00BAAC33 /* URLFactory.swift in Sources */,

@@ -16,8 +16,9 @@ extension MenuViewController: UICollectionViewDelegate, UICollectionViewDelegate
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = UICollectionViewScrollDirection.Vertical
         
-        let collBorder: CGFloat = 50.0
-        let collFrame = CGRectMake(collBorder, (self.view.frame.height - 2 * collBorder) * 0.4 + collBorder, (self.view.frame.width - 2 * collBorder), (self.view.frame.height - 2 * collBorder) * 0.6)
+//        let collBorder: CGFloat = 0.0
+//        let collFrame = CGRectMake(collBorder, (self.view.frame.height - 2 * collBorder) * 0.4 + collBorder, (self.view.frame.width - 2 * collBorder), (self.view.frame.height - 2 * collBorder) * 0.6)
+        let collFrame = self.view.frame
         
         menuCollection = UICollectionView(frame: collFrame, collectionViewLayout: layout)
         menuCollection.delegate = self
@@ -35,14 +36,21 @@ extension MenuViewController: UICollectionViewDelegate, UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = menuCollection.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! VidViewCell
+        let video = self.videos[indexPath.section][indexPath.row] as Video!
         
         cell.backgroundColor = UIColor.blackColor()
         cell.title.textColor = UIColor.whiteColor()
-        cell.title.text = channels[indexPath.row]
+        cell.title.text = video.title
         cell.title.textAlignment = NSTextAlignment.Center
-        
-        if cell.focused {
-            print(channels[indexPath.row])
+        if (video.image != nil) {
+            cell.thumbnail.image = video.image
+        } else if video.thumbnail_url != "" {
+            URLFactory.downloadImageWithURL(video.thumbnail_url) { (succeeded, image) -> Void in
+                if succeeded {
+                    cell.thumbnail.image = image
+                    video.image = image
+                }
+            }
         }
         
         return cell
@@ -75,11 +83,11 @@ extension MenuViewController: UICollectionViewDelegate, UICollectionViewDelegate
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return channels.count
+        return self.videos.count
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return self.videos[section].count
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {

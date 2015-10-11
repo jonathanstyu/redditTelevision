@@ -12,6 +12,7 @@ import UIKit
 class VidViewCell: UICollectionViewCell {
     var thumbnail: UIImageView!
     var title: UILabel!
+    var video: Video!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,8 +27,8 @@ class VidViewCell: UICollectionViewCell {
         
         title = UILabel()
         title.adjustsFontSizeToFitWidth = true
-        title.font = UIFont(name: "Avenir-Black", size: 30.0)
-        title.minimumScaleFactor = 0.2
+//        title.font = UIFont(name: "Avenir-Black", size: 30.0)
+        title.minimumScaleFactor = 0.1
         title.frame = CGRectMake(0, thumbnail.frame.height, self.contentView.frame.width, self.contentView.frame.height - thumbnail.frame.height)
         
         self.contentView.addSubview(thumbnail)
@@ -37,4 +38,5 @@ class VidViewCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder) has not been implemented")
     }
+    
 }
